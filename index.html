@@ -1,0 +1,123 @@
+<html>
+<head>
+<style>
+div {
+  margin: 20px;
+}
+</style>
+</head>
+<body>
+<h1>Convert file input to Blob</h1>
+<div>
+  <label for="load-file">Load a file:</label>
+  <input type="file" id="load-file">
+</div>
+<div>
+  <label for="file-type">File type: </label>
+  <input type="text" id="file-type" value="image/png">
+</div>
+<div>
+  <button type="button" id="done-button">Convert to Blob (look in the console)</button>
+</div>
+
+<script src="jquery.js"></script>
+<!--<script src="ocr.js" />-->
+<script src="blob-util@latest"></script>
+<!--<script src='https://cdn.rawgit.com/naptha/tesseract.js/1.0.10/dist/tesseract.js'></script>-->
+<!--<script type="module" src='https://cdn.rawgit.com/naptha/tesseract.js/1.0.10/dist/tesseract.js'></script>-->
+<script src="./ocrad.js"></script>
+<script>
+(function ($) {
+$('#done-button').on('click', function () {
+	SaveFiles($('#load-file')[0].files);
+});
+})(jQuery);
+</script>
+<script>
+function SaveFiles(files) {
+	var index = 0;
+	readNext();
+	function readNext() {	
+	var file = $('#load-file')[0].files[index++];
+	var fileReader = new FileReader();
+	var fr = new FileReader();
+	//var Tesseract = require('tesseract.js');
+	//var Tesseract = require('tesseract.js');
+  
+	  if (file.size > 0) {
+
+		  console.log("Starting with file: " + file.name);
+
+		  fr.onerror = function (event) {
+			 alert("An error occurred while reading file " + file.name);
+		  };
+				
+			fr.addEventListener("load",function(event){                   
+			
+			console.log("Done with reading file: " + file.name);
+			
+			console.log("Filename", file.name);
+			
+			console.log("FILE TYPE PR : "+file.type);
+			console.log("Filesize", file.size);
+			 
+			var base64Image = event.srcElement.result.split("data:" + file.type + ";base64,")[1];
+			console.log("Done with encoding: " + file.name);	
+			//console.log("Content",base64Image);
+			console.log("Now uploading: " + file.name);
+			console.log("Done with uploading: " + file.name);
+			var date_img = new Date().getTime();
+			var newNode = document.createElement("IMG");
+			newNode.setAttribute("id", "base64_img" + date_img);
+			newNode.setAttribute("src", "data:image/jpeg;base64," + base64Image);
+			//image.src = 'data:image/jpeg;base64,'+Base64.encode(base64Image);
+			newNode.setAttribute("width", "100");
+			newNode.setAttribute("height", "100");
+			document.body.appendChild(newNode);
+			var imageText = OCRAD(base64Image);
+			var img = document.getElementById("base64_img" + date_img);
+			var parsedText = OCRAD(img);
+			alert(parsedText);
+			console.log(parsedText);
+			//alert(imageText);
+		});
+		fr.readAsDataURL(file);
+		  
+		  fr.onloadend = function () {
+			 if (index < files.length) {
+				readNext(); // Read following file
+			 } else {
+				 /*
+				clearTimeout(nTimerId); // in case we got here before it fired; now we don't want it to fire
+				
+				setTimeout(function () {
+				   pm.ExecuteMethod("RefreshMe");
+				   SiebelApp.S_App.uiStatus.Free();
+				}, 2000);
+				*/
+			 }
+
+		  };
+		  //AMOHAMED389 - Maged
+		  fr.readAsBinaryString(file);
+		  console.log("readAsBinaryString : " + readAsBinaryString(file));
+		  //fr.readAsText(file);
+	   } else {
+		  alert("File " + file.name + " is empty. Skipping.");
+		  if (index < files.length) {
+			 readNext(); // Read following file
+		  } else {
+			 //clearTimeout(nTimerId); // in case we got here before it fired; now we don't want it to fire
+			 /*
+			 setTimeout(function () {
+				pm.ExecuteMethod("RefreshMe");
+				SiebelApp.S_App.uiStatus.Free();
+			 }, 2000);
+			 */
+		  }
+	   }
+   }
+}
+</script>
+</body>
+</html>
