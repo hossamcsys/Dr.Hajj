@@ -1,0 +1,483 @@
+@media  (min-device-width : 1224px) {
+    .parallax {
+        background-image: url('../images/hajj.png'); 
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        -o-background-size: auto auto;
+        -moz-background-size: auto auto;
+        -webkit-background-size: auto auto;
+        position: relative;
+        background-position: center;
+        height: 100%;
+        padding-top:100px; 
+        padding-bottom:550px;
+    }
+       
+    .mobForm{
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+    
+    .deskName{
+        width: 30%;
+    }
+    
+    .deskEmail{
+        width: 30%;
+    }
+    
+    .deskSubmit{
+        background-color: #1b5e20;
+        width: 15%;
+    }
+    .deskSubmit:hover{
+    color: #fff;
+    background-color: #4c8c4a;
+}
+.deskSubmit:focus{
+    color: #fff;
+    background-color: #4c8c4a;
+}
+    
+    #thankyou_message{
+        margin-left: 50px;
+    }
+
+    #whyinsta{      
+        margin-right: 30px;
+        margin-left: 0px;
+    }
+
+    #whyInsta2{    
+        font-size: 25px;
+    }
+}
+
+@media (min-width : 631px) and (max-width : 991px)  {
+     .parallax {
+         background-image: url('../images/test'); 
+         background-repeat: no-repeat;
+         background-attachment: fixed;
+         -o-background-size: auto auto;
+         -moz-background-size: auto auto;
+         -webkit-background-size: auto auto;
+         position: relative;
+         background-position: center;
+         height: 100%;
+         padding-top:80px;
+         padding-bottom:100px;
+    }
+       
+    .mobForm{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .deskName{
+        width: 60%;
+    }
+    
+    .deskEmail{
+        width: 60%;
+    }
+    
+    .deskSubmit{
+        width: 60%;
+    }
+    
+    #testhome{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    #oneaccount{
+        margin-right: 30px;
+        margin-left: 0px;
+    }
+    
+    #testfirst{
+        text-align: left;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+        
+    #line1{
+        margin-right: 90%;
+        margin-left: 1%;
+    }
+   
+    #line2{
+        margin-right: 90%;
+        margin-left: 3px;
+    }
+    
+    #oneaccount2{
+        height: 300px;
+        width: 550px;  
+    }
+  
+    #imageInMobile{
+        text-align: center;
+    }
+   
+    #testfirst2{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    #whyeasy{
+        margin-right: 30px;
+        margin-left: 0px;
+    }
+    
+    #testImage{
+        padding-left: 30px;
+        padding-right: 10px;
+    }
+    
+    #footerNavigation{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    #thankyou_message{
+        margin-left: 10px;
+    }
+      
+    .messageContact{
+        width: 90%;
+    }
+    
+    .contact{
+        width: 90%;
+    }
+    
+    #mobButton{
+        width: 60%;
+    }
+    
+    #whyInsta2{    
+        font-size: 25px;
+    }
+
+}
+
+@media (min-width : 457px) and (max-width : 630px)  {
+
+    .parallax {
+        background-image: url('../images/test'); 
+        background-repeat: no-repeat;
+        -o-background-size: auto auto;
+        -moz-background-size: auto auto;
+        -webkit-background-size: auto auto;
+        position: relative;
+        background-position: center;
+        height: 100%;
+        padding-top:12%;
+        padding-bottom:19%;
+    }
+      
+    #testhome{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .mobForm{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .deskName{
+        width: 75%;
+    }
+    
+    .deskEmail{
+        width: 75%;
+    }
+    
+    .deskSubmit{
+        width: 75%;
+    }
+    
+    #line1{
+        margin-right: 85%;
+        margin-left: 2%;
+    }
+      
+    #line2{
+        margin-right: 85%;
+        margin-left: 3px;
+    }
+    
+    #oneaccount2{
+        height: 250px;
+        width: 400px;
+    }
+    
+    #testfirst{
+        text-align: left;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    #imageInMobile{
+        text-align: center;
+    }
+
+    #testfirst2{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    #whyeasy{
+        margin-right: 30px;
+        margin-left: 0px;
+    }
+
+    #testImage{
+        padding-left: 30px;
+        padding-right: 10px;
+    }
+    
+    #footerNavigation{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    #thankyou_message{
+        margin-left: 10px;
+    }
+    
+    .messageContact{
+        width: 90%;
+    }
+    
+    .contact{
+        width: 90%;
+    }
+    
+    #mobButton{
+        width: 60%;
+    }
+    
+    #whyInsta2{    
+        font-size: 25px;
+    }
+     
+}
+
+@media (min-width : 286px) and (max-width : 376px)  {
+    .parallax {
+        background-image: url('../images/moblogo.png');
+        background-repeat: no-repeat;
+        -o-background-size: auto auto;
+        -moz-background-size: auto auto;
+        -webkit-background-size: auto auto;
+        position: relative;
+        background-position: center;
+        height: 100%;
+        padding-bottom:130px;
+        padding-top: 20%;
+    }
+    
+    #testhome{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #homeTitle{
+        font-size: 30px;
+    }
+
+    #homeTitle2{
+        font-size: 20px;
+    }
+    
+    .mobForm{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .deskName{
+        width: 90%;
+    }
+    
+    .deskEmail{
+        width: 90%;
+    }
+    
+    .deskSubmit{ 
+        width: 90%;
+    }
+    
+    #testfirst{
+        text-align: left;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    #line1{
+        margin-right: 80%;
+        margin-left: 2%;
+    }
+    
+    #imageInMobile{
+        text-align: center;
+    }
+
+    #oneaccount2{
+        height: 150px;
+        width: 232px;
+    }
+    
+    #whyeasy{
+        margin-right: 30px;
+        margin-left: 0px;
+    }
+    
+    #easyiphone{
+        height:530px;
+        width:220px;
+    }
+    
+    #testfirst2{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    #footerNavigation{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    #thankyou_message{
+        margin-left: 10px;
+    }
+    
+    .messageContact{
+        width: 80%;
+    }
+
+    .contact{
+        width: 80%;
+    }
+    
+    #mobButton{
+        width: 50%;
+    }
+    
+    #line2{
+        margin-right: 80%;
+        margin-left: 3px;
+    }
+    
+    #whyInsta2{    
+        font-size: 25px;
+    }
+
+}
+
+@media (min-width : 377px) and (max-width : 456px)  {
+    .parallax {
+        background-image: url('../images/moblogo.png');
+        background-repeat: no-repeat;
+        -o-background-size: auto auto;
+        -moz-background-size: auto auto;
+        -webkit-background-size: auto auto;
+        position: relative;
+        background-position: center;
+        height: 100%;
+        padding-top: 2%;
+        padding-bottom:80px;
+    }
+    
+    #testhome{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    #line2{
+        border: 0;
+        margin-right: 85%;
+        margin-left: 2%;
+        background-color: #667467;
+        height: 2px;
+    }
+    
+    .mobForm{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+   
+    .deskName{
+        width: 87%;
+    }
+    
+    .deskEmail{
+        width: 87%; 
+    }
+   
+    .deskSubmit{
+        width: 87%;
+    }
+    
+    #line1{
+        margin-right: 85%;
+        margin-left: 2%;   
+    }
+
+    #testfirst{
+        text-align: left;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    #homeTitle{
+        margin-bottom: 1px;
+        margin-top: 90px;
+        font-size: 40px;
+    }
+    
+    #imageInMobile{
+        text-align: center;
+    }
+    
+    #testfirst2{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+  
+    #thankyou_message{
+        margin-left: 10px;
+    }
+  
+    #whyeasy{
+        margin-right: 30px;
+        margin-left: 0px; 
+    }
+   
+    .contact{
+        width: 80%;
+        height: 35px;
+    }
+
+    .messageContact{
+        width: 80%;
+    }
+    
+    #mobButton{
+        width: 50%;
+        border-radius: 8px 8px 8px 8px;
+    }
+    
+    #footerNavigation{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    #whyInsta2{    
+        font-size: 25px;
+    }
+
+}
+

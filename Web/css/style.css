@@ -1,0 +1,91 @@
+#navigationColor{
+    background-color:#000;
+    opacity: 0.8;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+#test2{
+    background-color: #000;
+}
+#betaLogin{
+    background-color: #000;
+    color: #fff;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+#homeTitle{
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    font-size: 50px;
+}
+
+#homeTitle2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+    color: #fff;
+    
+}
+
+
+
+
+.deskName{
+    height: 35px; 
+    width: 30%;
+    padding: 18px 20px;
+    margin: 1px 0;
+    box-sizing: border-box;
+    border: 1px 1px 1px 1px #ccc;
+    border-color: black;
+    border-radius: 2px 2px 2px 2px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+.deskEmail{
+    height: 35px; 
+    width: 30%;
+    padding: 18px 20px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 2px 2px 2px 2px #ccc;
+    border-color: black;
+    border-radius: 2px 2px 2px 2px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none; 
+}
+
+.deskSubmit{
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    width: 30%;
+    height: 40px;
+    color: #fff;
+    border: none;
+    border-radius: 2px 2px 2px 2px;      
+}
+.deskSubmit:hover{
+    color: #fff;
+}
+.deskSubmit:focus{
+    color: #fff;
+    background-color: #287bbc;
+}
+
+input[type=text]:focus {
+    border: 3px solid Green;
+}
+
+input[type=email]:focus {
+    border: 3px solid Green;
+}
+
+
+
+
+
+
+
